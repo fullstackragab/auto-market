@@ -1,0 +1,79 @@
+:host {
+  margin: 5px;
+}
+
+.container {
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  height: 120px;
+  min-width: 248px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid white;
+  &.active {
+    border: 2px solid #ff5100;
+    box-shadow: rgb(211, 211, 211) 4px 4px 4px;
+    margin-top: -1px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .fuel-type {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: gray;
+    font-size: small;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    img {
+      width: 80%;
+      max-width: 140px;
+      max-height: 100px;
+    }
+  }
+
+  .car-info {
+    display: grid;
+    
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    font-size: small;
+    .item {
+      min-width: 60px;
+      text-align: center;
+    }
+
+    .label {
+      color: gray;
+    }
+    .value {
+      font-weight: bold;
+    }
+  }
+}

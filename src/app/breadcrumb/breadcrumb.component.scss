@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: medium;
+  margin: 10px 0px;
+
+  .link {
+    color: rgb(70, 70, 70);
+    margin: 0px 10px;
+    &.active {
+      color: black;
+    }
+  }
+  .mark {
+    margin: 0px;
+  }
+}

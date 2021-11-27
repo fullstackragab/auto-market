@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="content">
+    <div class="label">
+      <div class="title">
+        {{ statsItem.make }}
+      </div>
+      <div *ngIf="statsItem.top" class="top">"Top of the last week"</div>
+    </div>
+    <div class="marker">
+      <div class="fill" [style.width]="statsItem.percent + '%'"></div>
+    </div>
+  </div>
+  <div class="image">
+    <img [src]="statsItem.image">
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="header">
+    <div class="item date">
+      <div class="label">Stats of the</div>
+      <div class="value">
+        <select class="form-select"><option selected>last week</option></select>
+      </div>
+    </div>
+    <div class="item country">
+      <div class="label">Select country</div>
+      <div class="value">
+        <select class="form-select"><option selected>United States</option></select>
+      </div>
+    </div>
+    <div class="item province">
+      <div class="label">Select province</div>
+      <div class="value">
+        <select class="form-select"><option selected>American</option></select>
+      </div>
+    </div>
+    <div class="item city">
+      <div class="label">Select city</div>
+      <div class="value">
+        <select class="form-select"><option selected>Hispanic</option></select>
+      </div>
+    </div>
+  </div>
+  <div class="stats-container">
+    <app-stats-item *ngFor="let statsItem of stats" [statsItem]='statsItem'></app-stats-item>
+  </div>
+</div>

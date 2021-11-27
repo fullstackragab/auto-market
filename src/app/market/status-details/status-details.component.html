@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="logo">
+    <img [src]="statusDetails.carLogo">
+  </div>
+  <div class="main">
+    <div class="title">
+      {{ statusDetails.carTitle }}
+    </div>
+    <div class="image">
+      <img [src]="statusDetails.carImage">
+    </div>
+  </div>
+  <div class="summary">
+    <div class="status">
+      <div class="label">
+        Market Status
+      </div>
+      <div class="value">
+        <select class="form-select">
+          <option selected value="yesterday">Yesterday</option>
+        </select>
+      </div>
+    </div>
+    <div class="car-info">
+      <div class="distance">
+        <img src="assets/icons/route.svg">
+        {{ statusDetails.carDistance }}
+      </div>
+      <div class="transmission">
+        <img src="assets/icons/auto.svg">
+        {{ statusDetails.carTransmission }}
+      </div>
+      <div class="location">
+        <img src="assets/icons/location.svg">
+        {{ statusDetails.carLocation }}
+      </div>
+      <div class="fuel-type">
+        <img src="assets/icons/gas-station.svg">
+        {{ statusDetails.carFuelType }}
+      </div>
+    </div>
+
+    <div class="status-details">
+      <div class="item searched">
+        <div class="value">
+          {{ statusDetails.searched + ' k'}}
+        </div>
+        <div class="label">Searched</div>
+      </div>
+      <div class="item visited">
+        <div class="value">
+          {{ statusDetails.visited + ' k' }}
+        </div>
+        <div class="label">Visited</div>
+      </div>
+      <div class="item sold">
+        <div class="value">
+          {{ statusDetails.sold + ' k'}}
+        </div>
+        <div class="label">Sold</div>
+      </div>
+    </div>
+  </div>
+</div>

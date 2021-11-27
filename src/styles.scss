@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+body {
+  background-color: #ececec;
+  margin: 0px auto;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: var(--primary-color) !important;
+  border: var(--primary-color);
+  padding: 15px 15px !important;
+  padding-right: 20px !important;
+  // min-width: 120px !important;
+}
+
+:root {
+  --primary-color: #ff5100;
+  // color: #dad8d8
+}

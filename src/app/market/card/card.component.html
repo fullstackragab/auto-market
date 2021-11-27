@@ -1,0 +1,31 @@
+<div class="container" routerLinkActive="active" [routerLink]="['/market', cardStatus.carId ]">
+  <div class="logo">
+    <img [src]="cardStatus.carLogo">
+  </div>
+  <div class="fuel-type">
+    {{ cardStatus.carFuelType }}
+  </div>
+  <div class="image">
+    <img [src]="cardStatus.carImage">
+  </div>
+  <div class="summary">
+    <div class="item searched">
+      <div class="label">Searched</div>
+      <div class="value">
+        {{ cardStatus.searched + ' k'}}
+      </div>
+    </div>
+    <div class="item visited">
+      <div class="label">Visited</div>
+      <div class="value">
+        {{ cardStatus.visited + ' k' }}
+      </div>
+    </div>
+    <div class="item sold">
+      <div class="label">Sold</div>
+      <div class="value">
+        {{ cardStatus.sold + ' k'}}
+      </div>
+    </div>
+  </div>
+</div>

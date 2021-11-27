@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 10px;
+font-size: medium;
+  .title {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    width: 0px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      visibility: visible;
+      width: 40%;
+    }
+    .link {
+      margin: 0px 10px;
+      color: gray;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+      &.active {
+        color: black;
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .icon {
+      cursor: pointer;
+      margin: 2px;
+
+      @media (min-width: 768px) {
+        width: 10%;
+      }
+    }
+    .adv {
+      button {
+        box-sizing: border-box;
+        width: 110px;
+      }
+      @media (min-width: 768px) {
+        width: 200px;
+      }
+    }
+    .car {
+      visibility: hidden;
+      width: 0px;
+      @media (min-width: 768px) {
+        visibility: visible;
+        width: 10%;
+      }
+    }
+    .star {
+      visibility: hidden;
+      width: 0px;
+      @media (min-width: 768px) {
+        visibility: visible;
+        width: 10%;
+      }
+    }
+    .user {
+      width: 90px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .caption {
+        width: 50px;
+      }
+      img {
+        align-self: flex-start;
+        margin-top: 5px;
+      }
+    }
+  }
+}

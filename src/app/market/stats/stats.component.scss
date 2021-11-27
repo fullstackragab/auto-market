@@ -1,0 +1,78 @@
+.container {
+  background-color: white;
+  padding: 0px;
+  margin: 5px;
+  box-sizing: border-box;
+
+  padding-bottom: 30px;
+  margin-bottom: 90px;
+  margin-top: 20px;
+
+  .header {
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 30px;
+    display: grid;
+    row-gap: 20px;
+    justify-items: center;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .date {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+    
+    .country {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+    }
+    
+    .province {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+    }
+    
+    .city {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+
+
+
+    .item {
+      
+      .label {
+        color: gray;
+        margin-bottom: 10px;
+      }
+
+      .value {
+        select {
+          font-weight: bold;
+          cursor: pointer;
+          font-size: small;
+          width: 160px;
+          @media (min-width: 768px) {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  .stats-container {
+    padding: 10px;
+    box-sizing: border-box;
+    
+    @media (min-width: 768px) {
+      padding: 70px;
+      
+    }
+  }
+}
